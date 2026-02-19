@@ -40,17 +40,21 @@ void averageCalc(vector<vector<double>> studentTable, int students, int  quizzes
     // This is where will be the output shown
     cout << "Student\t";
     for(int i = 0; i < quizzesPerStudent; i++){
-        cout << "   Q"<<i+1<<"   ";
+        cout << "   Q"<<i+1<<"\t";
     }
-    cout << "Average"<<endl;
-    cout <<"-----------------------------------------------------"<<endl;
-
+    cout << "  Average"<<endl;
+    cout<<"--------------";
+    for(int i = 0; i < quizzesPerStudent; i++){
+        cout << "-----------";
+    }
+    cout <<"------";
+    cout<<endl;
     for(int i = 0; i < students; i++){
         cout << i+1 <<"\t   "; 
         for(int j = 0; j < quizzesPerStudent; j++){
             cout <<studentTable[i][j]<<"\t   ";
         }
-        cout << ave[i];
+        cout <<" "<<ave[i];
         cout <<endl;
     }
 }

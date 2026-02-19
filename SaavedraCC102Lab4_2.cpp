@@ -40,7 +40,8 @@ void tableOutput(vector<vector<double>> salesTable, int noOfRows, int noOfCols){
     vector<double> totalSalesPerProduct;
     vector<double> totalSalesPerSalesPerson;
 
-    // Total Sales Per Product
+
+    // Total Sales Per Salesperson
     for(int i = 0; i < noOfCols; i++){
         double total = 0;
         for(int j = 0; j < noOfRows; j++){
@@ -48,7 +49,8 @@ void tableOutput(vector<vector<double>> salesTable, int noOfRows, int noOfCols){
         }
         totalSalesPerSalesPerson.push_back(total);
     }
-    // Total Sales Per Salesperson
+
+    // Total Sales Per Product
     for(int i = 0; i < noOfRows; i++){
         double total = 0;
         for(int j = 0; j < noOfCols; j++){

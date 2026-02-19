@@ -63,10 +63,9 @@ void tableOutput(vector<vector<double>> salesTable, int noOfRows, int noOfCols){
     }
     // This is where will be the output shown
     cout << "\t\t\t\t\tSalesperson\t\t" <<endl;
-    cout << "Product\t\t1\t\t2\t\t3\t\t4\t\tTotal"<<endl;
-     for(int i = 0; i < noOfRows; i++){
-        cout << "-------------------------------------------------------------------------------------"<<endl;
-    }
+    cout << "Product\t\t1\t\t2\t\t3\t\t4\t\tTotal"<<endl; 
+    cout << "-------------------------------------------------------------------------------------"<<endl;
+    
     
     for(int i = 0; i < noOfRows; i++){
         cout << i+1<<"\t\t";

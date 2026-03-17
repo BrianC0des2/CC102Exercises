@@ -1,7 +1,7 @@
 /**
- * Author: Bryan P. Saavedra
- * Section: BSCS 1B
- * Created: 2026-02-20
+ * AUTHOR: Bryan P. Saavedra
+ * SECTION: BSCS 1B
+ * DATE: 2026-02-20
  */
 
 #include <iostream>
@@ -68,7 +68,7 @@ void tableOutput(vector<vector<double>> salesTable, int noOfRows, int noOfCols){
     cout << "Product\t\t1\t\t2\t\t3\t\t4\t\tTotal"<<endl; 
     cout << "-------------------------------------------------------------------------------------"<<endl;
     
-    
+ 
     for(int i = 0; i < noOfRows; i++){
         cout << i+1<<"\t\t";
         for(int j = 0; j < noOfCols; j++){

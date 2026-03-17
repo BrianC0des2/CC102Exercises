@@ -48,7 +48,8 @@ void analyzeGrades(double* grades, int students, int subjects) {
 
 int main() {
     int students, subjects;
-
+    char choice;
+    do{
     cout << "Enter number of students: ";
     cin >> students;
     cout << "Enter number of subjects: ";
@@ -65,6 +66,9 @@ int main() {
     }
 
     analyzeGrades(&grades[0][0], students, subjects);
-
+    
+        cout << "\nRepeat? : ";
+        cin >> choice;
+    }while(tolower(choice) == 'y');
     return 0;
 }

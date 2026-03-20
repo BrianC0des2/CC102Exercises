@@ -87,7 +87,6 @@ int main() {
     cin >> noOfStudents;
     cin.ignore();
     vector<student> students(noOfStudents);
-    vector<student> copyOfStudents = students;
     getStudentInfo(noOfStudents, students);
     displayStudentInfo(students, noOfStudents);
 

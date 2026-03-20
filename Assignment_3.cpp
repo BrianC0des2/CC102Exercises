@@ -28,7 +28,7 @@ bool idExist(int i,vector<student> students, int noOfStudents){
 }
 
 
-void getStudentInfo(int noOfStudents, vector<student>& students){
+void input(int noOfStudents, vector<student>& students){
     for (int i = 0; i < noOfStudents; i++) {
         bool exist;
         cout << "Student "<<i+1<<endl;
@@ -55,7 +55,7 @@ void getStudentInfo(int noOfStudents, vector<student>& students){
 
 
 
-void displayStudentInfo(vector<student>& student, int noOfStudents){
+void display(vector<student>& student, int noOfStudents){
     cout <<"\nID"<<"\t"<<"Name"<<"\t"<<"Course"<<"\t"<<"GPA"<<"\t"<<"Academic Standing"<<endl;
     for (int i = 0; i < noOfStudents; i++) {
         string academicStanding;
@@ -87,8 +87,8 @@ int main() {
     cin >> noOfStudents;
     cin.ignore();
     vector<student> students(noOfStudents);
-    getStudentInfo(noOfStudents, students);
-    displayStudentInfo(students, noOfStudents);
+    input(noOfStudents, students);
+    display(students, noOfStudents);
 
 
     return 0;

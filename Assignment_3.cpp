@@ -85,7 +85,6 @@ int main() {
 
     cout << "Enter number of students: ";
     cin >> noOfStudents;
-    cin.ignore();
     vector<student> students(noOfStudents);
     input(noOfStudents, students);
     display(students, noOfStudents);

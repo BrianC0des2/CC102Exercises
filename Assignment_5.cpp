@@ -41,9 +41,7 @@ vector<string> readFile(string fileName){
 
 string sortText(string fileName){
     vector<string> newSortedTexts = readFile(fileName);
-    sort(newSortedTexts.begin(), newSortedTexts.end(), [](string a, string b){
-        return a[0] < b[0];
-    });
+    sort(newSortedTexts.begin(), newSortedTexts.end());
     string contents = "";
     for (auto &text : newSortedTexts) {
         contents += text+"\n";

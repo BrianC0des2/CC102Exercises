@@ -1,4 +1,3 @@
-
 /*
  * AUTHOR: Bryan P. Saavedra
  * SECTION: BSCS 1B
